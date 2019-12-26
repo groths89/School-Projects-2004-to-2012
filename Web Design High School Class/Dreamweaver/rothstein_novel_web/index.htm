@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Novel Homepage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body background="misc_b011_border.gif" text="#CC0000" link="#006699" onLoad="MM_preloadImages('button_goto.jpg','movie_gony.jpg')">
+<div align="center">
+  <p><font size="+7" face="Playbill, Rockwell"><em><strong><a name="top"></a>Gangs of New York</strong></em></font></p>
+<p><strong><font size="+3" face="Playbill, Rockwell">Herbert Asbury</font></strong></p>
+     <table width="579" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="193"><a href="index.htm" target="_top" onClick="MM_nbGroup('down','group1','Home','',1)" onMouseOver="MM_nbGroup('over','Home','button_goto.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img src="button_home.jpg" alt="Home" name="Home" width="193" height="91" border="0" onload=""></a></td>
+      <td width="192"><a href="about_the_book.htm" target="_top" onClick="MM_nbGroup('down','group1','gangsofnewyork','',1)" onMouseOver="MM_nbGroup('over','gangsofnewyork','button_goto.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img src="button_book.jpg" alt="Gangs Of New York" name="gangsofnewyork" width="192" height="91" border="0" onload=""></a></td>
+      <td width="1147"><a href="herbert_asbury.htm" target="_top" onClick="MM_nbGroup('down','group1','herbert_asbury','',1)" onMouseOver="MM_nbGroup('over','herbert_asbury','button_goto.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img src="button_author.jpg" alt="Herbert Asbury" name="herbert_asbury" width="193" height="91" border="0" onload=""></a></td>
+    </tr>
+  </table>
+  <p><a href="#bottom">BOTTOM OF THE PAGE</a></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('GangsOfNewYork','','movie_gony.jpg',1)"><img src="book_GONY.jpg" alt="Gangs Of New York" name="GangsOfNewYork" width="273" height="458" border="0"></a></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><img src="ahr026_animated_hrule.gif" width="280" height="13"></p>
+  <p>&nbsp;</p>
+  <table width="71%" height="945" border="6" cellpadding="6" cellspacing="6">
+    <tr>
+      <td width="50%" height="41"><div align="center"><font size="+2" face="Playbill, Rockwell">Character</font></div>
+      </td>
+      <td width="50%"><div align="center"><font size="+2" face="Playbill, Rockwell">Information</font></div>
+      </td>
+    </tr>
+    <tr>
+      <td><font size="+2" face="Playbill, Rockwell">&nbsp;Bill &quot;the Butcher&quot; Poole</font></td>
+      <td><font size="+2" face="Playbill, Rockwell">A gang leader that
+          was shot in the heart and abdomen and lived 14 days after that.</font></td>
+    </tr>
+    <tr>
+      <td><font size="+2" face="Playbill, Rockwell"> William &quot;Boss&quot; Tweed</font></td>
+      <td><font size="+2" face="Playbill, Rockwell">The boss of the gangs and
+          he was a political leader.&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td><font size="+2" face="Playbill, Rockwell">John Morrissey</font></td>
+      <td><font size="+2" face="Playbill, Rockwell">He was a very rich man, had
+          $700,000. He was a rival of Bill Poole and he shot him. He got into
+          a confrontation withe
+          Bill
+          in a
+          bar.</font></td>
+    </tr>
+    <tr>
+      <td><font size="+2" face="Playbill, Rockwell">&nbsp;Anthony Rutger</font></td>
+      <td><font size="+2" face="Playbill, Rockwell">Obtained a 75 acre marsh,
+          and it was eventually turned into the lower part of Manhattan.&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td><font size="+2" face="Playbill, Rockwell">Edward Coleman</font></td>
+      <td><font size="+2" face="Playbill, Rockwell">He married a hot corn
+          girl and shortly after murdered her.</font></td>
+    </tr>
+    <tr>
+      <td><font size="+2" face="Playbill, Rockwell">Dan Kerrigan</font></td>
+      <td><font size="+2" face="Playbill, Rockwell">A noted Pugilist, and
+          he operated a house at No. 110 Cherry Street.</font></td>
+    </tr>
+    <tr>
+      <td><font size="+2" face="Playbill, Rockwell">John Fitch</font></td>
+      <td><font size="+2" face="Playbill, Rockwell">A sailor and captain of a
+          ship that carried Robert Fulton, Chancellor Robert R. Livingston, John
+          Hutchings, and Anthony Rutger.</font></td>
+    </tr>
+    <tr>
+      <td><font size="+2" face="Playbill, Rockwell">John Hutchings</font></td>
+      <td><font size="+2" face="Playbill, Rockwell">16-year-old boy who was on
+          the ship to America, captained by John Fitch.&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td><font size="+2" face="Playbill, Rockwell">Horace Greeley&nbsp;</font></td>
+      <td><font size="+2" face="Playbill, Rockwell">A political leader.
+          A wealthy investor. And a part of the uptown (Wealthy) gang.</font></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p> <img src="ahr026_animated_hrule.gif" width="282" height="9"></p>
+  <p>LINKS TO REVIEWS:</p>
+  <p align="center">&nbsp; </p>
+  <p align="center"><a href="http://www.thewildgeese.com/pages/bkregony.html">http://www.thewildgeese.com/pages/bkregony.html</a></p>
+  <p align="center">&nbsp;</p>
+  <p align="center"><a href="http://urbanography.com/5_points/" target="_parent">http://urbanography.com/5_points/</a></p>
+  <p align="center">&nbsp;</p>
+  <p align="right"><a href="http://www.opendemocracy.net/content/articles/PDF/890.pdf"> http://www.opendemocracy.net/content/articles/PDF/890.pdf</a></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><a name="bottom"></a></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><font face="Modern No. 20, High Tower Text"><a href="#top">TOP OF THE PAGE</a></font></p>
+  <p><font size="+2" face="Playbill, Rockwell">Last Updated On:
+    <!-- #BeginDate format:Sw1a -->6 November, 2006 8:05 AM<!-- #EndDate -->
+  </font></p>
+  <p><font size="1" face="Georgia, Times New Roman, Times, serif">&copy;Gregory Rothstein</font></p>
+</div>
+</body>
+</html>
